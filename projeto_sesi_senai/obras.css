@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(fundo5.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    background-position: 50% 50%;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: #f8f7f7;
+    width: 100%;
+}
+
+.sociais {
+    width: 120%
+}
+
+.logo {
+    width: 160%;
+}
+
+.logo button {
+    border: none;
+}
+
+.menu {
+    width: 140%;
+}
+
+.menu nav .esquerda{
+    color: #000;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 30px; color: #ae9972;
+    -webkit-text-stroke-width: 1px;
+    transition: background .3s;
+    border-radius: 40px 0 0 40px;
+}
+
+.menu nav .centro{
+    color: #000;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 30px; color: #ae9972;
+    -webkit-text-stroke-width: 1px;
+    transition: background .3s;
+    border-radius: 0 40px 40px 0;
+}
+
+.menu nav .esquerda:hover {
+    background-color: #e7e2e2;
+    padding: 25px;
+    border-radius: 40px 0 0 40px;
+}
+
+.menu nav .centro:hover {
+    background-color: #e7e2e2;
+    padding: 25px;
+}
+
+.menu nav .direita:hover {
+    background-color: #e7e2e2;
+    padding: 25px;
+    border-radius: 0 40px 40px 0;
+}
+
+.sociais button {
+    width: 35px;
+    height: 35px;
+    background-image: linear-gradient(45deg, #ae9972, #c4b484);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.sociais button i {
+    font-size: 25px;
+    color: #f8f7f7;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #f8f7f7;
+    padding: 15px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #000;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a{
+    color: #000;
+    text-decoration: none;
+}
+
+.card .back .link a:hover {
+    text-decoration: underline;
+    color: #797979;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+footer {
+    box-shadow: 0 1px 6px 2px #797979;
+    bottom: 0;
+    background: #f8f7f7;
+    height: 100% auto;
+    width: 100% auto;
+    padding-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-botton {
+    background: #e7e2e2;
+    width: 100% auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-botton p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-botton span {
+    opacity: .6;
+    font-weight: 200;
+}

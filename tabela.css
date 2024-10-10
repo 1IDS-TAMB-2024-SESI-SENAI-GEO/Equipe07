@@ -1,0 +1,103 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    margin : 0;
+    padding : 0;
+}
+
+table tr:hover {
+    background-color:  #e5f0f2;
+    color:#377983;
+}
+
+
+table{
+    border: solid;
+    border-color: rgb(41, 198, 241);
+}
+h1{
+    background-color: #a6d1dc;
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h3{
+    text-align: center;
+    background-color: #e5f0f2;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 50px solid;
+    border-radius: 30px;
+    border-color: #a6d1dc;
+    background-color: white;
+}
+
+table th, table td{
+    border: 1px solid #0c4160;
+    padding: 14px;
+}
+
+article{
+    text-align: center;
+    background-image: url('images/cidade.jpeg');
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #377983; 
+}
+
+a:hover {
+    color:#0c4160; 
+}
+
+button{
+    border: 1px solid #377983;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Estilo do modo escuro */
+body.dark-mode {
+    background-color: #2e2e2e;
+    color: white;
+    background-color: #e7f6f9;
+}
+
+table.dark-mode {
+    background-color: #5388a7;
+    border-color: #0c4160;
+}
+
+.dark-mode a {
+    color: #e5f0f2;
+}
+
+a.dark-mode:hover {
+    color: #bbdefb;
+}
+
+a.dark-mode {
+    color: #90caf9;
+}
+th.dark-mode, td.dark-mode {
+    border-color: #fdfdfd;
+}
+
+h1.dark-mode{
+    background-color:#0c4160
+}
+
+h3.dark-mode{
+    background-color: #5388a7;
+}
+
+
+
+
+

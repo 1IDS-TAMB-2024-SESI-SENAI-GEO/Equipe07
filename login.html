@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo Urbano | Entrar & Registrar</title>
+    <script src="https://kit.fontawesome.com/5b77603872.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem vindo de volta!</h2>
+                <p class="description description-primary">Para se manter conectado conosco</p>
+                <p class="description description-primary">por favor faça login com suas informações pessoais</p>
+                <button id="signin" class="btn btn-primary">Entrar</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Crie sua conta</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href=""><li class="item-social-media"><i class="fa-brands fa-facebook-f"></i></li></a>
+                        <a class="link-social-media" href=""><li class="item-social-media"><i class="fa-brands fa-google-plus-g"></i></li></a>
+                        <a class="link-social-media" href=""><li class="item-social-media"><i class="fa-brands fa-linkedin-in"></i></li></a>
+                    </ul>
+                </div>
+                <p class="description description-second">ou use seu e-mail para cadastro:</p>
+                <form class="form">
+                    <label class="label-input icon-modify" for="">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" placeholder="Nome de usuário">
+                    </label>
+                    <label class="label-input icon-modify" for="">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    <label class="label-input icon-modify" for="">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    
+                    <button class="btn btn-second">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Não possui uma conta?</h2>
+                <p class="description description-primary">Insira seus dados pessoais</p>
+                <p class="description description-primary">e comece a jornada conosco</p>
+                <button id="signup" class="btn btn-primary">Cadastrar-se</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Faça login</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href=""><li class="item-social-media"><i class="fa-brands fa-facebook-f"></i></li></a>
+                        <a class="link-social-media" href=""><li class="item-social-media"><i class="fa-brands fa-google-plus-g"></i></li></a>
+                        <a class="link-social-media" href=""><li class="item-social-media"><i class="fa-brands fa-linkedin-in"></i></li></a>
+                    </ul>
+                </div>
+                <p class="description description-second">ou use sua conta de e-mail</p>
+                <form class="form">
+                    <label class="label-input icon-modify" for="">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    <label class="label-input icon-modify" for="">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    <a class="password" href="#">Esqueceu sua senha?</a>
+                    <button class="btn btn-second">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
